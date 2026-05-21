@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="it"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio PCTO | Francesco Guerini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <nav class="bg-white border-b px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+        <span class="font-bold text-xl tracking-tighter">FG <span class="text-blue-600">PORTFOLIO</span></span>
+        <div class="space-x-6 text-sm font-medium text-gray-600">
+            <a href="index.html" class="text-blue-600">Home</a>
+            <a href="ospedale.html" class="hover:text-blue-600">Progetto Ospedale</a>
+        </div>
+    </nav>
+    <header class="bg-slate-900 text-white py-20 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Francesco Guerini</h1>
+        <p class="text-slate-400 mb-8 uppercase tracking-widest text-sm">Percorsi Competenze Trasversali e Orientamento</p>
+        
+        <div class="inline-grid grid-cols-2 gap-8 bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm">
+            <div>
+                <span class="block text-5xl font-black text-blue-400">158h</span>
+                <span class="text-xs text-slate-400 uppercase">Ore Totali</span>
+            </div>
+            <div>
+                <span class="block text-5xl font-black text-blue-400">6m</span>
+                <span class="text-xs text-slate-400 uppercase">Minuti</span>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-5xl mx-auto py-16 px-6">
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-star text-yellow-500"></i> Esperienza Principale
+            </h2>
+            <a href="ospedale.html" class="group block bg-white border-2 border-blue-500 rounded-3xl p-8 hover:shadow-2xl transition-all relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-blue-500 text-white px-6 py-2 rounded-bl-2xl font-bold text-sm">PROGETTO TOP</div>
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="bg-blue-50 p-6 rounded-2xl group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-hospital text-5xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2 text-slate-800">ASST Bergamo Est - Ospedale Bolognini</h3>
+                        <p class="text-gray-600 mb-4">Un'immersione tecnologica tra blocchi operatori, laboratori di analisi e sistemi di gestione sanitaria.</p>
+                        <span class="text-blue-600 font-bold group-hover:underline">Vedi il diario completo →</span>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <section>
+            <h2 class="text-2xl font-bold mb-8">Altre Attività</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border hover:border-blue-300 transition-colors">
+                    <span class="text-blue-600 font-bold">30h</span>
+                    <h4 class="font-bold mt-2">DESS InfoSostenibile</h4>
+                    <p class="text-sm text-gray-500">Economia sociale e solidale.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border hover:border-blue-300 transition-colors">
+                    <span class="text-blue-600 font-bold">52h</span>
+                    <h4 class="font-bold mt-2">Cre Estivo Pedrengo</h4>
+                    <p class="text-sm text-gray-500">Gestione gruppi e animazione.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border hover:border-blue-300 transition-colors">
+                    <span class="text-blue-600 font-bold">8h</span>
+                    <h4 class="font-bold mt-2">Corsi Sicurezza</h4>
+                    <p class="text-sm text-gray-500">Formazione obbligatoria.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body></html>
