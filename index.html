@@ -1,76 +1,127 @@
-<!DOCTYPE html><html lang="it"><head>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio PCTO | Francesco Guerini</title>
+    <title>Francesco Guerini | Digital Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        
+        .bento-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+        }
+        .bento-card:hover { transform: scale(1.02); }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-mesh {
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(45, 212, 191, 0.1) 0px, transparent 50%);
+        }
     </style>
 </head>
-<body class="bg-slate-50">
-    <nav class="bg-white border-b px-6 py-4 flex justify-between items-center sticky top-0 z-50">
-        <span class="font-bold text-xl tracking-tighter">FG <span class="text-blue-600">PORTFOLIO</span></span>
-        <div class="space-x-6 text-sm font-medium text-gray-600">
-            <a href="index.html" class="text-blue-600">Home</a>
-            <a href="ospedale.html" class="hover:text-blue-600">Progetto Ospedale</a>
+<body class="bg-mesh text-slate-900 min-h-screen">
+
+    <nav class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="text-2xl font-extrabold tracking-tighter">
+            FG<span class="text-blue-600">.</span>
+        </div>
+        <div class="flex gap-4">
+            <a href="ospedale.html" class="p-3 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all text-slate-600 hover:text-blue-600" title="Ospedale">
+                <i class="fa-solid fa-hospital"></i>
+            </a>
+            <a href="cre.html" class="p-3 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all text-slate-600 hover:text-orange-600" title="CRE">
+                <i class="fa-solid fa-sun"></i>
+            </a>
+            <a href="des.html" class="p-3 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all text-slate-600 hover:text-emerald-600" title="DESS">
+                <i class="fa-solid fa-leaf"></i>
+            </a>
         </div>
     </nav>
-    <header class="bg-slate-900 text-white py-20 px-6 text-center">
-        <h1 class="text-4xl font-bold mb-4">Francesco Guerini</h1>
-        <p class="text-slate-400 mb-8 uppercase tracking-widest text-sm">Percorsi Competenze Trasversali e Orientamento</p>
-        
-        <div class="inline-grid grid-cols-2 gap-8 bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm">
-            <div>
-                <span class="block text-5xl font-black text-blue-400">158h</span>
-                <span class="text-xs text-slate-400 uppercase">Ore Totali</span>
+
+    <main class="max-w-5xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-6">
+            
+            <div class="md:col-span-3 md:row-span-2 bento-card border border-white rounded-[3rem] p-10 md:p-16 flex flex-col justify-center relative overflow-hidden shadow-2xl shadow-blue-900/5">
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-50"></div>
+                
+                <h2 class="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs mb-4">PCTO 2024/25</h2>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                    Francesco <span class="gradient-text">Guerini</span>
+                </h1>
+                <p class="text-slate-500 text-lg md:text-xl max-w-lg leading-relaxed font-light">
+                    Studente del Liceo Amaldi. 
+                </p>
             </div>
-            <div>
-                <span class="block text-5xl font-black text-blue-400">6m</span>
-                <span class="text-xs text-slate-400 uppercase">Minuti</span>
+
+            <div class="md:col-span-1 bento-card bg-blue-600 rounded-[2.5rem] p-8 text-white flex flex-col justify-center items-center shadow-xl shadow-blue-600/20">
+                <span class="text-5xl font-black">158</span>
+                <span class="text-xs uppercase tracking-widest opacity-80 font-bold mt-2">Ore Totali</span>
             </div>
+
+            <div class="md:col-span-1 bento-card bg-white border border-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-center items-center shadow-lg shadow-slate-200/50">
+                <span class="text-4xl font-black text-slate-800">3</span>
+                <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mt-2 text-center">Esperienze Chiave</span>
+            </div>
+
+            <div class="md:col-span-2 bento-card bg-white border border-blue-100 rounded-[3rem] p-8 shadow-xl shadow-blue-900/5 group relative">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-4 bg-blue-50 text-blue-600 rounded-2xl group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-hospital-user text-2xl"></i>
+                    </div>
+                    <a href="ospedale.html" class="text-slate-300 hover:text-blue-600 transition-colors">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                    </a>
+                </div>
+                <h3 class="text-2xl font-extrabold mb-2">Ospedale Bolognini</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">Orientamento sanitario e analisi dei sistemi di gestione clinica.</p>
+                <a href="ospedale.html" class="absolute inset-0 z-10" aria-label="Vai al progetto ospedale"></a>
+            </div>
+
+            <div class="md:col-span-1 bento-card bg-white border border-orange-100 rounded-[3rem] p-8 shadow-xl shadow-orange-900/5 group relative">
+                <div class="p-4 bg-orange-50 text-orange-600 rounded-2xl mb-6 inline-block">
+                    <i class="fa-solid fa-sun text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-extrabold mb-2">CRE 2025</h3>
+                <p class="text-orange-600 font-bold text-sm flex items-center gap-2">
+                    Vedi <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                </p>
+                <a href="cre.html" class="absolute inset-0 z-10" aria-label="Vai al progetto CRE"></a>
+            </div>
+
+            <div class="md:col-span-1 bento-card bg-white border border-emerald-100 rounded-[3rem] p-8 shadow-xl shadow-emerald-900/5 group relative">
+                <div class="p-4 bg-emerald-50 text-emerald-600 rounded-2xl mb-6 inline-block">
+                    <i class="fa-solid fa-leaf text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-extrabold mb-2">DESS</h3>
+                <p class="text-emerald-600 font-bold text-sm flex items-center gap-2">
+                    Info <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                </p>
+                <a href="des.html" class="absolute inset-0 z-10" aria-label="Vai al progetto DESS"></a>
+            </div>
+
         </div>
-    </header>
-    <main class="max-w-5xl mx-auto py-16 px-6">
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
-                <i class="fa-solid fa-star text-yellow-500"></i> Esperienza Principale
-            </h2>
-            <a href="ospedale.html" class="group block bg-white border-2 border-blue-500 rounded-3xl p-8 hover:shadow-2xl transition-all relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-blue-500 text-white px-6 py-2 rounded-bl-2xl font-bold text-sm">PROGETTO TOP</div>
-                <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="bg-blue-50 p-6 rounded-2xl group-hover:bg-blue-500 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-hospital text-5xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2 text-slate-800">ASST Bergamo Est - Ospedale Bolognini</h3>
-                        <p class="text-gray-600 mb-4">Un'immersione tecnologica tra blocchi operatori, laboratori di analisi e sistemi di gestione sanitaria.</p>
-                        <span class="text-blue-600 font-bold group-hover:underline">Vedi il diario completo →</span>
-                    </div>
-                </div>
-            </a>
-        </section>
-        <section>
-            <h2 class="text-2xl font-bold mb-8">Altre Attività</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-2xl border hover:border-blue-300 transition-colors">
-                    <span class="text-blue-600 font-bold">30h</span>
-                    <h4 class="font-bold mt-2">DESS InfoSostenibile</h4>
-                    <p class="text-sm text-gray-500">Economia sociale e solidale.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl border hover:border-blue-300 transition-colors">
-                    <span class="text-blue-600 font-bold">52h</span>
-                    <h4 class="font-bold mt-2">Cre Estivo Pedrengo</h4>
-                    <p class="text-sm text-gray-500">Gestione gruppi e animazione.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl border hover:border-blue-300 transition-colors">
-                    <span class="text-blue-600 font-bold">8h</span>
-                    <h4 class="font-bold mt-2">Corsi Sicurezza</h4>
-                    <p class="text-sm text-gray-500">Formazione obbligatoria.</p>
-                </div>
-            </div>
-        </section>
     </main>
 
-</body></html>
+    <footer class="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center border-t border-slate-200 gap-4">
+        <p class="text-slate-400 text-sm">© 2024 Francesco Guerini • Liceo Amaldi</p>
+        <div class="flex gap-6 text-slate-300 text-lg">
+            <i class="fa-brands fa-github hover:text-slate-900 transition-colors cursor-pointer"></i>
+            <i class="fa-brands fa-linkedin hover:text-slate-900 transition-colors cursor-pointer"></i>
+        </div>
+    </footer>
+
+</body>
+</html>

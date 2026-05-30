@@ -1,78 +1,98 @@
-<!DOCTYPE html><html lang="it" style=""><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Diario Ospedale | Francesco Guerini</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Diario Ospedale | Francesco Guerini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hospital-card:hover img { transform: scale(1.05); }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
-<nav class="bg-white border-b px-6 py-4 sticky top-0 z-50">
-<a class="text-blue-600 font-bold" href="#"><i class="fa-solid fa-arrow-left"></i> Torna alla Home</a>
-</nav>
-<header class="bg-blue-600 text-white py-16 px-6">
-<div class="max-w-4xl mx-auto">
-<h1 class="text-4xl font-bold mb-2">Diario di Bordo: Ospedale Bolognini</h1>
-<p class="text-blue-100 italic">ASST Bergamo Est | Gennaio - Febbraio 2024</p>
-</div>
-</header>
-<main class="max-w-4xl mx-auto py-12 px-6">
-<div class="space-y-12">
-<div class="flex gap-6">
-<div class="flex flex-col items-center">
-<div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">01</div>
-<div class="w-0.5 h-full bg-blue-200"></div>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm border flex-1 overflow-hidden"><img alt="Introduzione e Sicurezza" class="w-full h-[300px] object-cover rounded-xl mb-6 border border-slate-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhWBZxxJTsUwt8YX-tqS9H0m8d2WL_0AktidtMrw9beEebxGGLp0Q-GlHmyJwkQR9_k3bsqFNiLbXQlzK_vjq7y5GeMwvObTAzPn28yu8zvL7sHtPtXpzyQsJUF7LGymMcO5xezsui0bdypqYDX4Ah_WrzjR57Oxa6LSVdsCCeR80tm6Pat1KKcAtedTSuzxuLwVDEqLx3VRj9X-Qj81XcBLY4Fxs7fmOd0F4s0UuH06iASirJ1xxB02Vheiz0b9M4PaqAi28hEKU">
-<span class="text-sm text-blue-600 font-bold uppercase">29-01-2024</span>
-<h3 class="text-xl font-bold mt-1 mb-3 text-slate-800 italic">Introduzione e Sicurezza</h3>
-<p class="text-gray-600 text-sm leading-relaxed">Presentazione del sistema socio-sanitario lombardo. Analisi dei rischi sul lavoro (Ingegneria clinica) e focus sul percorso di studi in Medicina.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex flex-col items-center">
-<div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">02</div>
-<div class="w-0.5 h-full bg-blue-200"></div>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm border flex-1 overflow-hidden"><img alt="Blocco Operatorio e Riabilitazione" class="w-full h-[300px] object-cover rounded-xl mb-6 border border-slate-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDivIraf_bgS22uUORGPAvYnA-ZsKTLV_4QqQ3RI6eflDVxmsr21NlgHGlaFQXPONpZIKuef9IhHAkBLiqREDTD1f-XokhrIgBWxbZtnvjx2tEt9QoeggH9oR2a48IA6EelnKN3k77JbLFPej_7rw2yDMYlWipHPzHDTV9JBga_gQjNt3ynzB7Mp20qiGSoD5kK2Vcg0GT5aOY7yto8IYMjobI4sjX9i5kkYE56YWms96XOxkg35THfOt7BTJek5DUq2iy1FzfDcbE">
-<span class="text-sm text-blue-600 font-bold uppercase">30-01-2024</span>
-<h3 class="text-xl font-bold mt-1 mb-3 text-slate-800 italic">Blocco Operatorio e Riabilitazione</h3>
-<p class="text-gray-600 text-sm leading-relaxed">Osservazione di interventi chirurgici (cataratta, laser corde vocali, colon). Incontro con Dietisti e Fisioterapisti per capire la multidisciplinarietà nel recupero del paziente.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex flex-col items-center">
-<div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">03</div>
-<div class="w-0.5 h-full bg-blue-200"></div>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm border flex-1 overflow-hidden"><img alt="Sanità Territoriale e Prevenzione" class="w-full h-[300px] object-cover rounded-xl mb-6 border border-slate-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2YmtSxG0xcSjQrHzoLxe4auKu_9CrllzsgPK5tFDDyqxYLZHn_KfQniIXjpeAZ8W_cfGsSkp_fcq1G5BOt-DVwfxPt6AhzSAlTCQHsFyIBsyzIL6RDh6Ge5yorGtFd9_BuaIw6LjU13WGJHC0i2bByYot8WwxET8VQZIJjhSAuvltEPDThyIEjwtipyyy-RROkPb3iKyc49uvqunj56TZOyu5t6474X16_V8JfTUjRqJR74FRQsQHCJvUDUodBlq60NyHTyPs9Bw">
-<span class="text-sm text-blue-600 font-bold uppercase">31-01-2024</span>
-<h3 class="text-xl font-bold mt-1 mb-3 text-slate-800 italic">Sanità Territoriale e Prevenzione</h3>
-<p class="text-gray-600 text-sm leading-relaxed">Approfondimento presso l'Ufficio Vaccinazioni e Consultorio. Focus sull'importanza dei Pap test e sul ruolo dell'Infermiere di Famiglia e della Psicologia clinica.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex flex-col items-center">
-<div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">04</div>
-<div class="w-0.5 h-full bg-blue-200"></div>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm border flex-1 overflow-hidden"><img alt="Area Materno-Infantile" class="w-full h-[300px] object-cover rounded-xl mb-6 border border-slate-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsF9OT_zCUhb8EMvmXriE6jjAeJWcQwlG1KftTR5d_XHC6pb97CLJ6Ez3kvzqSM5pQ8sCi1AwB0cPoc7Zc-aU_dWKHPp874yeKsFYzaQHGWiw4LLAfkGJGzhDqDu4Wa-AaJoRbTVKKOMuCUwx9YtWFZvbA4VeXTREDvmP7IjOho4Zo3LW9NwoYNqvi-T5bHldiCS74F0WyHcCjkQGmkcJFiJ2U9HAQwMxu43bB8THzmXaXsaoBy62z1aStI7V5iJmmDzdPeUe59Hg">
-<span class="text-sm text-blue-600 font-bold uppercase">01-02-2024</span>
-<h3 class="text-xl font-bold mt-1 mb-3 text-slate-800 italic">Area Materno-Infantile</h3>
-<p class="text-gray-600 text-sm leading-relaxed">Visita ai reparti di Ostetricia e Terapia Intensiva Neonatale. Analisi del supporto tecnologico per i neonati prematuri e dei protocolli del Nido.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex flex-col items-center">
-<div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">05</div>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm border flex-1 overflow-hidden"><img alt="Laboratorio Analisi e Automazione" class="w-full h-[300px] object-cover rounded-xl mb-6 border border-slate-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvJjVEJ63F9udzPS5Dhgn5Yi54tlq2ea5q4zWek2EIYWEXLmhc9V-aGAruTq7Vp3PGP1o6tGDHpbFuw-3Kyg6HFoIiIgVo7c-Ts0E-xwNWKLHk_etA7O48yH4RBvZOjnmNwronEf8P0FClEIbppFCzL8vC_kjV53O6Tyga1_vy3_TKYqrScgvZhBhqbgmBJBHJwgLZQT5_zMZo4t1PpS96UsXqoJS7eBYiGVJ3fl-4lhCGpa80T2lcEy6e0Vmojic-TN_1azxggKY">
-<span class="text-sm text-blue-600 font-bold uppercase">02-02-2024</span>
-<h3 class="text-xl font-bold mt-1 mb-3 text-slate-800 italic">Laboratorio Analisi e Automazione</h3>
-<p class="text-gray-600 text-sm leading-relaxed">Focus su biochimica, microbiologia, analisi delle urine e immuno-trasfusionale. Osservazione dei processi di citologia e istologia presso l'Anatomia Patologica.</p>
-</div>
-</div>
-</div>
-</main>
+<body class="bg-[#f8fafc] text-slate-900">
 
+    <nav class="bg-white/80 backdrop-blur-md border-b sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a class="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all" href="index.html">
+                <i class="fa-solid fa-arrow-left"></i> Home
+            </a>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest text-right">PCTO 2024</span>
+        </div>
+    </nav>
 
-</body></html>
+    <header class="bg-blue-600 text-white py-24 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="0,100 100,0 100,100"/>
+            </svg>
+        </div>
+        <div class="max-w-6xl mx-auto relative">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 tracking-tighter">Diario di Bordo</h1>
+            <p class="text-blue-100 text-xl italic font-light">Ospedale Bolognini | ASST Bergamo Est</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-16 px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="hospital-card group bg-white rounded-[2.5rem] shadow-xl shadow-blue-900/5 border border-slate-100 overflow-hidden transition-all duration-500 hover:shadow-2xl">
+                <div class="h-64 overflow-hidden relative">
+                    <img alt="Blocco Operatorio" class="w-full h-full object-cover transition-transform duration-700" src="immagini/ospedales.jpeg">
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-xs font-bold text-blue-600 shadow-sm">
+                        30-01-2024
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">01</div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-800 leading-tight">Blocco Operatorio e Riabilitazione</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Osservazione di interventi chirurgici (cataratta, laser corde vocali, colon). Incontro con Dietisti e Fisioterapisti per la multidisciplinarietà nel recupero del paziente.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hospital-card group bg-white rounded-[2.5rem] shadow-xl shadow-blue-900/5 border border-slate-100 overflow-hidden transition-all duration-500 hover:shadow-2xl">
+                <div class="h-64 overflow-hidden relative">
+                    <img alt="Area Materno-Infantile" class="w-full h-full object-cover transition-transform duration-700" src="immagini/HPG23-148-0015.jpg">
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-xs font-bold text-blue-600 shadow-sm">
+                        01-02-2024
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">02</div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-800 leading-tight">Area Materno-Infantile</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Visita ai reparti di Ostetricia e Terapia Intensiva Neonatale. Analisi del supporto tecnologico per i neonati prematuri e dei protocolli del Nido.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hospital-card group bg-white rounded-[2.5rem] shadow-xl shadow-blue-900/5 border border-slate-100 overflow-hidden transition-all duration-500 hover:shadow-2xl md:col-span-2 lg:col-span-1">
+                <div class="h-64 overflow-hidden relative">
+                    <img alt="Laboratorio Analisi" class="w-full h-full object-cover transition-transform duration-700" src="immagini/DISLIPIDEMIA-1024x524.jpg">
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-xs font-bold text-blue-600 shadow-sm">
+                        02-02-2024
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">03</div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-800 leading-tight">Laboratorio Analisi e Automazione</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Focus su biochimica, microbiologia e analisi cliniche. Osservazione dei processi di citologia e istologia presso l'Anatomia Patologica.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-500 py-16 text-center">
+        <p class="text-sm uppercase tracking-[0.2em] mb-2 font-semibold">Portfolio Digitale</p>
+        <p class="text-xs">© 2024 Francesco Guerini - Liceo Edoardo Amaldi</p>
+    </footer>
+
+</body>
+</html>
